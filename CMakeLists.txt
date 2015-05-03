@@ -14,7 +14,8 @@ ELSE()
 	MESSAGE( FATAL_ERROR "Unknown CMAKE_SYSTEM_NAME: ${CMAKE_SYSTEM_NAME}" )
 ENDIF()
 
-SET( SRCS ${PLATFORM_SRCS} )
+SET( SRCS ${PLATFORM_SRCS} 
+          "src/IPAddr.cpp" )
 
 SET( CMAKE_CXX_FLAGS
      "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror -std=c++1y" )
